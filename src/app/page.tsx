@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="w-[100%] ">
-      <section className="h-[100vh] w-[100vw] relative">
+      <section className="h-[100vh] w-[100%] relative">
         <CarouselComponent />
       </section>
       <AboutUsComponent />

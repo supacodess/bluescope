@@ -12,11 +12,11 @@ const responsive = {
     },
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 2
+        items: 3
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 1
+        items: 2
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
@@ -64,7 +64,7 @@ function TestimonialsComponent() {
                 {
                     carouselItems.map((item: any) => (
                         <div key={item} className='h-[25rem] w-[100vw] md:w-[30rem] flex items-center'>
-                            <div className='w-[90%] shadow-2xl  p-4'>
+                            <div className='w-[90%] shadow-xl hover:shadow-md duration-300 p-4'>
                                 <div className='flex items-center gap-4 mb-8'>
                                     <div className='h-[4rem] w-[4rem] relative'>
                                         <Image

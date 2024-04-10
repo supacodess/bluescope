@@ -77,7 +77,7 @@ function GalleryComponent() {
         };
     }
     return (
-        <section className='h-[100vh] w-[90vw] mx-auto font-inriaSerif py-10'>
+        <section className='w-[90vw] mx-auto font-inriaSerif py-10'>
             <div className='flex items-center justify-between mb-6'>
                 <h1 className='text-4xl font-bold text-[#1e1e5d]'>Gallery</h1>
                 <button className='text-white bg-[#1e1e5d] px-4 py-1 rounded-full w-fit'>

@@ -43,10 +43,10 @@ function AboutUsComponent() {
     const carouselItems = [1, 2, 3, 4, 5, 6, 7, 8];
 
     return (
-        <section className='w-[100vw] text-center py-20 font-inriaSerif'>
+        <section className='w-[100%] text-center py-20 font-inriaSerif'>
             <div className='w-[90%] mx-auto flex flex-col gap-8 mb-12'>
                 <h1 className='text-4xl font-inriaSerif font-bold'>Delivering iconic project with our sub-companies around Nepal</h1>
-                <div className='flex items-center justify-center gap-4'>
+                <div className='flex items-center justify-center gap-4 flex-wrap'>
                     <div onClick={(e) => changeTag(e)} className={`${tagClass}  ${tag === 'Agriculture' ? 'bg-[#1e1e5d] text-white' : 'bg-[#adadad] text-[555] hover:bg-[#1e1e5d] hover:opacity-85'}`}><p>Agriculture Sector</p></div>
                     <div onClick={(e) => changeTag(e)} className={`${tagClass}  ${tag === 'Education' ? 'bg-[#1e1e5d] text-white' : 'bg-[#adadad] text-[555] hover:bg-[#1e1e5d] hover:opacity-85'}`}><p>Education Sector</p></div>
                     <div onClick={(e) => changeTag(e)} className={`${tagClass}  ${tag === 'Logistics' ? 'bg-[#1e1e5d] text-white' : 'bg-[#adadad] text-[555] hover:bg-[#1e1e5d] hover:opacity-85'}`}><p>Logistics Sector</p></div>
@@ -59,7 +59,7 @@ function AboutUsComponent() {
             <Carousel responsive={responsive}>
                 {
                     carouselItems.map((item: number) => (
-                        <div key={item} className='bg-[#D9D9D9] h-[15rem] w-[25rem]'>
+                        <div key={item} className='bg-[#D9D9D9] h-[20rem]'>
 
                         </div>
                     ))

@@ -11,7 +11,7 @@ import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 function BottomNavComponent() {
     const [value, setValue] = React.useState(0);
     return (
-        <div className='fixed bottom-0 w-[100vw]'>
+        <div className='fixed md:hidden bottom-0 w-[100vw]'>
             <Box sx={{ width: '100%' }}>
                 <BottomNavigation
                     showLabels

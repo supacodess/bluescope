@@ -17,22 +17,18 @@ const actions = [
 ];
 function NavbarComponent() {
     return (
-        <>
-            <nav className='font-inriaSerif flex items-center justify-between w-[60%] mx-auto p-2 mt-2 bg-white absolute md:z-10 left-0 right-0 top-0 rounded-full opacity-0 md:opacity-100 z-0'>
-                <h1 className='text-2xl'>Logo</h1>
-                <div className='flex gap-6'>
-                    <Link href="/" className='text-[#1e1e5d] font-bold'>Home</Link>
-                    <Link href="/">About us</Link>
-                    <Link href="/">Our Verticals</Link>
-                    <Link href="/">Blogs</Link>
-                </div>
-                <button className='bg-[#1e1e5d] text-white p-2 rounded-full px-3 none'>
-                    Become a member!
-                </button>
-
-            </nav>
-
-        </>
+        <nav className='font-inriaSerif hidden md:flex items-center py-2 justify-between w-[60%] mx-auto rounded-full absolute z-[1] bg-white px-3 m-auto left-0 right-0 mt-4'>
+            <h1 className='text-2xl'>Logo</h1>
+            <div className='flex gap-6'>
+                <Link href="/" className='text-[#1e1e5d] font-bold'>Home</Link>
+                <Link href="/">About us</Link>
+                <Link href="/">Our Verticals</Link>
+                <Link href="/">Blogs</Link>
+            </div>
+            <button className='bg-[#1e1e5d] text-white p-2 rounded-full px-3 none'>
+                Become a member!
+            </button>
+        </nav>
     )
 }
 
