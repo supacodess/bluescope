@@ -8,7 +8,7 @@ export const InriaSerif = localFont({
             style: "normal",
         },
         {
-            path: "../../public/fonts/InriaSerif-regular.ttf",
+            path: "../../public/fonts/InriaSerif-Regular.ttf",
             weight: "400",
             style: "normal",
         },
