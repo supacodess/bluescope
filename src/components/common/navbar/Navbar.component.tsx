@@ -17,7 +17,7 @@ const actions = [
 ];
 function NavbarComponent() {
     return (
-        <nav className='font-inriaSerif hidden md:flex items-center py-2 justify-between w-[60%] mx-auto rounded-full absolute z-[1] bg-white px-3 m-auto left-0 right-0 mt-4'>
+        <nav className='font-inriaSerif hidden md:flex items-center py-2 justify-between w-[60%] mx-auto rounded-full fixed shadow-xl z-[1] bg-white px-3 m-auto left-0 right-0 mt-4'>
             <h1 className='text-2xl'>Logo</h1>
             <div className='flex gap-6'>
                 <Link href="/" className='text-[#1e1e5d] font-bold'>Home</Link>
