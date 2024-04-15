@@ -7,9 +7,11 @@ import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
+import { useRouter } from 'next/navigation';
 
 function BottomNavComponent() {
     const [value, setValue] = React.useState(0);
+    const navigate = useRouter();
     return (
         <div className='fixed md:hidden bottom-0 w-[100vw]'>
             <Box sx={{ width: '100%' }}>
@@ -20,8 +22,8 @@ function BottomNavComponent() {
                         setValue(newValue);
                     }}
                 >
-                    <BottomNavigationAction label="Home" icon={<HomeIcon />} />
-                    <BottomNavigationAction label="About us" icon={<InfoIcon />} />
+                    <BottomNavigationAction onClick={() => navigate.push('/')} label="Home" icon={<HomeIcon />} />
+                    <BottomNavigationAction onClick={() => navigate.push('/about-us')} label="About us" icon={<InfoIcon />} />
                     <BottomNavigationAction label="Our Verticls" icon={<AccountTreeIcon />} />
                     <BottomNavigationAction label="Contact us" icon={<PermContactCalendarIcon />} />
                 </BottomNavigation>

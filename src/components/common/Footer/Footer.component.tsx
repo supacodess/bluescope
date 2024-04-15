@@ -4,7 +4,7 @@ import React from 'react'
 
 function FooterComponent() {
     return (
-        <section className='bg-background-texture font-inriaSerif py-20 text-white mt-8'>
+        <section className='bg-background-texture font-inriaSerif py-20 text-white'>
             <div className='w-[90%] mx-auto flex gap-20 md:gap-40 flex-wrap'>
                 <div>
                     <h1 className='text-4xl font-bold'>BlueScope Company Pvt. Ltd.</h1>
@@ -13,10 +13,10 @@ function FooterComponent() {
                 </div>
                 <div className='flex flex-col gap-4'>
                     <Link href={'/'}>Home</Link>
-                    <Link href={'/'}>About us</Link>
+                    <Link href={'/about-us'}>About us</Link>
                     <Link href={'/'}>Our Verticls</Link>
                     <Link href={'/'}>Gallery</Link>
-                    <Link href={'/'}>Blogs</Link>
+                    {/* <Link href={'/'}>Blogs</Link> */}
                     <Link href={'/'}>Contact us</Link>
                 </div>
                 <div className='flex flex-col gap-4'>

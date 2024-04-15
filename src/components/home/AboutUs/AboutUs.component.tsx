@@ -56,7 +56,7 @@ function AboutUsComponent() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                 </p>
             </div>
-            <Carousel responsive={responsive}>
+            <Carousel responsive={responsive} className=''>
                 {
                     carouselItems.map((item: number) => (
                         <div key={item} className='bg-[#D9D9D9] h-[20rem]'>
